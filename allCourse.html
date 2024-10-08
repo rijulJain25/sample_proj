@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/allCou.css">
+</head>
+  <body>
+    <div class="course-outer">
+    <div class="card-outer">
+        <img src="assets/play-pause.png" onclick="playPause('video1')"></img>
+        <img src="assets/zoom-in.png" onclick="makeBig('video1')"></img>
+        <img src="assets/zoom-out.png" onclick="makeSmall('video1')"></img>
+        <img src="assets/dry.png" onclick="makeNormal('video1')"></img>
+      <br />
+      <video class="videos" id="video1" width="300">
+        <source src="assets/vid1.mp4" type="video/mp4" />
+        <source src="mov_bbb.ogg" type="video/ogg" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <div class="card-outer">
+        <img src="assets/play-pause.png" onclick="playPause('video2')"></img>
+        <img src="assets/zoom-in.png" onclick="makeBig('video2')"></img>
+        <img src="assets/zoom-out.png" onclick="makeSmall('video2')"></img>
+        <img src="assets/dry.png" onclick="makeNormal('video2')"></img>
+        <br />
+        <video  class="videos" id="video2" width="300">
+          <source src="assets/vid2.mp4" type="video/mp4" />
+          <source src="mov_bbb.ogg" type="video/ogg" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="card-outer">
+        <img src="assets/play-pause.png" onclick="playPause('video3')"></img>
+        <img src="assets/zoom-in.png" onclick="makeBig('video3')"></img>
+        <img src="assets/zoom-out.png" onclick="makeSmall('video3')"></img>
+        <img src="assets/dry.png" onclick="makeNormal('video3')"></img>
+        <br />
+        <video  class="videos" id="video3" width="300">
+          <source src="assets/vid3.mp4" type="video/mp4" />
+          <source src="mov_bbb.ogg" type="video/ogg" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+
+    <script>
+
+      function playPause(videoId) {
+        var myVideo = document.getElementById(videoId);
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
+
+      function makeBig(videoId) {
+        var myVideo = document.getElementById(videoId);
+        myVideo.width = 500;
+      }
+
+      function makeSmall(videoId) {
+        var myVideo = document.getElementById(videoId);
+        myVideo.width = 200;
+      }
+
+      function makeNormal(videoId) {
+        var myVideo = document.getElementById(videoId);
+        myVideo.width = 300;
+      }
+    </script>
+  </body>
+</html>

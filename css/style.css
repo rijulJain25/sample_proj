@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+  
+section {
+    min-height: 440px;
+    height: 100%;
+}
+.footer {
+    background-color: #0400fc;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 1;
+    padding: 40px 100px;
+}
+
+.footer-search{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    padding: 40px;
+    flex: 1;
+    padding: 40px 100px;
+
+}
+
+.redirects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    padding: 40px;
+    text-decoration: none;
+    flex: 0.7;
+    padding: 40px 100px;
+}
+  
+  .input-container {
+      display: flex;
+  }
+  
+  ::placeholder {
+    color: #757575;
+    opacity: 1;
+  }
+  
+  .search-input {
+    background: #EEEEEE;
+    color: #212121;
+      vertical-align: middle;
+    font-size: 12px;
+    line-height: 2;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 -1px 1px -1px #CCCCCC, inset 0 1px 1px -1px #CCCCCC, inset 1px 0 1px -1px #CCCCCC;
+  }
+  
+  .search-submit {
+    background: #13ddf8c7;
+    color: #FFFFFF;
+      vertical-align: middle;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+  }
+
+li{
+  padding: 0px 10px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    border: none;
+    overflow-x: hidden;
+}
+
+
+#dropdownMenuButton {
+  background: transparent;
+  border: none;
+  color:white;
+}
+
+.dropdown-item:hover .nested-dropdown {
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: white;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #E9F1FA;
+}
+@media (max-width: 768px) {
+    .footer-one{
+        padding: 40px;
+    }
+    
+    .redirects{
+        padding: 40px;
+    }
+    
+
+}

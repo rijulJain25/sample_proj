@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+<div class="outer">
+    <div class="form-container">
+        <img class="img-reg" src="./assets/reg.jpeg" width="40%" height="40%">
+        <form action="welcome.html">
+            <h2>Submit Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option >JavaScript</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Software Knowledge:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="html" name="software" >
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="software" >
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="software" >
+                    <label for="js">JavaScript</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="remarks">Remarks:</label>
+                <textarea name="remarks" rows="4" cols="50"></textarea>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>

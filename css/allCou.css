@@ -1,0 +1,23 @@
+.card-outer{
+    width: 380px;
+    height: 250px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.course-outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+img {
+    width: 30px;
+    padding: 10px;
+}
