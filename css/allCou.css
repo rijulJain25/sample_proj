@@ -1,23 +1,88 @@
-.card-outer{
-    width: 380px;
-    height: 250px;
+.card-holder {
+    width: 280px;
+    height: 440px;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
     display: inline-block;
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 30px;
+  }
+
+  .course-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 80px 70px 0px 70px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    background-color: white;
 }
 
-.course-outer{
+  .courses{
+    animation: slideIn 2s ease forwards;
+    padding-left: 30px;
+  }
+  
+  .card-holder img {
+    width: 280px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .detail-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 20px;
+  }
+
+  .span-detial{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .card-btn-cust{
+    background-color: white;
+    color: #333f2e;
+    border: 1px solid #333f2e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .card-btn-cust:hover{
+    background-color: #333f2e;
+    color: white;
+    transition: 0.3s ease-in;
+  }
+
+  .course-side-txt{
+    font-weight: bold; 
+    font-size: 40px;
+  }
+
+  .cart-section {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    background-color:white;
+    max-width: 400px;
+    z-index: 2;
+    color: #333f2e;
+    box-shadow: 4px 2px 4px 10px rgba(0, 0, 0, 0.2);;
 }
 
-
-
-img {
-    width: 30px;
-    padding: 10px;
+#cart-items {
+    max-height: 300px;
+    overflow-y: auto;
 }

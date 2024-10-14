@@ -7,9 +7,8 @@
     margin: 10px;
     display: inline-block;
     text-align: center;
-    font-family: Arial, sans-serif;
+    /* font-family: "Libre Baskerville", serif; */
   }
-  
   .card-holder img {
     width: 280px;
     height: 250px;

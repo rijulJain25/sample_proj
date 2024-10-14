@@ -4,6 +4,7 @@
     justify-content: center;
     font-family: Arial, sans-serif;
     padding: 40px;
+    font-family: "Merriweather", serif;
 }
 
 .details{
@@ -11,9 +12,6 @@
     flex-direction: column;
     flex: 1;
 }
-
-
-
     
 @media (max-width: 768px) {
     .contact-details {
@@ -21,8 +19,6 @@
         align-items: center;
         padding: 20px;
     }
-
-
 }
 
 form {
@@ -34,7 +30,7 @@ form {
 .form-sec{
     max-width: 400px;
     padding: 50px;
-    background-color: #0400fc;
+    background-color: #333f2e;
     border-radius: 20px;
   }
   
@@ -53,9 +49,6 @@ label {
     color: white;
 }
  
-button:hover {
-    background-color: #2980b9;
-}
  
 input[type="submit"] {
     background-color: #4CAF50;

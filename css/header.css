@@ -1,0 +1,39 @@
+.main-style-nav{
+  /* font-family: "Merriweather", serif; */
+  padding: 13px 60px !important;
+}
+
+.nav-link:hover{
+    color: gold !important;;
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+    color:white;
+  }
+
+  #dropdownMenuButton:hover {
+    color: gold;
+  }
+
+  
+  .dropdown-item:hover .nested-dropdown {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #698360;
+    color: white;
+  }
+  
+  .dropdown-item:hover {
+    color: gold;
+    background-color: #698360;
+  }
+
+  @media (max-width: 768px) {
+    .main-style-nav{
+      padding: 13px 20px !important;
+    }
+  }

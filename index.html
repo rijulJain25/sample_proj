@@ -1,104 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <nav class="navbar bg-primary navbar-expand-lg " style="padding: 0px 55px;" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-weight: 900; font-size: xx-large;">LCV</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html" target="Navframe"> <i class="fa-solid fa-house"></i> Home</a>
-              </li>
-              <div class="dropdown" style="display: inline-block;">
-                <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-book"></i> All Courses
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="courses.html#all" target="contentFrame">ALL COURSES</a></li>
-                    <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">MERN COURSE</a>
-                        <ul class="nested-dropdown dropdown-menu">
-                            <li><a class="dropdown-item" href="courses.html#react" target="contentFrame">React</a></li>
-                            <li><a class="dropdown-item" href="courses.html#node" target="contentFrame">Node.js</a></li>
-                            <li><a class="dropdown-item" href="courses.html#mongodb" target="contentFrame">MongoDB</a></li>
-                            <li><a class="dropdown-item" href="courses.html#express" target="contentFrame">Express.js</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">MEAN COURSE</a>
-                        <ul class="nested-dropdown dropdown-menu">
-                            <li><a class="dropdown-item" href="courses.html#mongodb" target="contentFrame">Angular</a></li>
-                            <li><a class="dropdown-item" href="courses.html#node" target="contentFrame">Node.js</a></li>
-                            <li><a class="dropdown-item" href="courses.html#mongodb" target="contentFrame">MongoDB</a></li>
-                            <li><a class="dropdown-item" href="courses.html#express" target="contentFrame">Express.js</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="courses.html#devops" target="contentFrame">DEVOPS</a></li>
-                    <li><a class="dropdown-item" href="courses.html#genAI" target="contentFrame">GenAI</a></li>
-                </ul>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link " href="registration.html" target="Navframe" style="color:white;"> <i class="fa-solid fa-right-to-bracket"></i> Registration</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link " href="gallery.html" target="Navframe"  style="color:white;"> <i class="fa-solid fa-photo-film"></i>  Gallery</a>
-              </li>
-              <li class="nav-item"></li>
-                <a class="nav-link" href="contact.html" target="Navframe" style="color:white;"> <i class="fa-solid fa-address-book"></i> Contact Us</a>
-              </li>
-            </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    
+    <section id="home">
+      <div class="home-header">
+        <div class="homehead">
+          <div class="head-text">
+            <h1 class="headtxt">Welcome to LVC!</h1>
+            <p>
+              Elevate your skills and enjoy the journey of learning, where
+              learning meets passion. Discover new horizons, connect with
+              like-minded individuals
+            </p>
+            <article>
+              <!-- <h4>View Important courses</h4> -->
+              <div class="head-btn">
+                <a href="#course-sec" class="head-button">Jump In</a>
+                <a href="#" class="head-button-two"
+                  >BROWSE COURSE
+                  <i class="fa-solid fa-chevron-right thisIcon"></i
+                ></a>
+              </div>
+            </article>
           </div>
+          <div class="head-img">
+            <img class="headimg" style="width: 80%" src="assets/head.png" />
+          </div>
+          "
         </div>
-      </nav>
-    
-    <section>
-        <iframe name="Navframe" src="home.html" title=""></iframe>
+
+        <section class="course-sec" id="course-sec">
+          <div class="courses">
+            <div class="card-holder">
+              <img src="./assets/mern.png" alt="Image 1" />
+              <h3 class="desc">MERN Stack</h3>
+              <div class="detail-card">
+                <div class="span-detial">
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-user"></i>&nbsp &nbspBy Tapan
+                    Kumar</span
+                  >
+                  <span class="detail-bar">
+                    <i class="fa-solid fa-clock"></i> &nbsp Duration:
+                    60Hrs</span
+                  >
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-people-arrows"></i>&nbsp 1:1 Doubt
+                    Session</span
+                  >
+                </div>
+                <h3
+                  style="
+                    text-align: center;
+                    padding: 10px 10px;
+                    background-color: rgb(233, 233, 193);
+                    border-radius: 5px;
+                  "
+                >
+                  $15
+                </h3>
+              </div>
+              <button class="card-btn-cust" type="button">ENROLL</button>
+            </div>
+
+            <div class="card-holder">
+              <img src="./assets/mean.png" alt="Image 2" />
+              <h3 class="desc">MEAN Stack</h3>
+              <div class="detail-card">
+                <div class="span-detial">
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-user"></i>&nbsp &nbspBy Tapan
+                    Kumar</span
+                  >
+                  <span class="detail-bar">
+                    <i class="fa-solid fa-clock"></i> &nbsp Duration:
+                    60Hrs</span
+                  >
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-people-arrows"></i>&nbsp 1:1 Doubt
+                    Session</span
+                  >
+                </div>
+                <h3
+                  style="
+                    text-align: center;
+                    padding: 10px 10px;
+                    background-color: rgb(233, 233, 193);
+                    border-radius: 5px;
+                  "
+                >
+                  $15
+                </h3>
+              </div>
+              <button class="card-btn-cust" type="button">ENROLL</button>
+            </div>
+
+            <div class="card-holder">
+              <img src="./assets/devops.png" alt="Image 3" />
+              <h3 class="desc">DEVOPS</h3>
+              <div class="detail-card">
+                <div class="span-detial">
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-user"></i>&nbsp &nbspBy Tapan
+                    Kumar</span
+                  >
+                  <span class="detail-bar">
+                    <i class="fa-solid fa-clock"></i> &nbsp Duration:
+                    75Hrs</span
+                  >
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-people-arrows"></i>&nbsp 1:1 Doubt
+                    Session</span
+                  >
+                </div>
+                <h3
+                  style="
+                    text-align: center;
+                    padding: 10px 10px;
+                    background-color: rgb(233, 233, 193);
+                    border-radius: 5px;
+                  "
+                >
+                  $25
+                </h3>
+              </div>
+              <button class="card-btn-cust" type="button">ENROLL</button>
+            </div>
+            <div class="card-holder">
+              <img src="./assets/gen.png" alt="Image 3" />
+              <h3 class="desc">GEN-AI</h3>
+              <div class="detail-card">
+                <div class="span-detial">
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-user"></i>&nbsp &nbspBy Tapan
+                    Kumar</span
+                  >
+                  <span class="detail-bar">
+                    <i class="fa-solid fa-clock"></i> &nbsp Duration:
+                    35Hrs</span
+                  >
+                  <span class="detail-bar"
+                    ><i class="fa-solid fa-people-arrows"></i>&nbsp 1:1 Doubt
+                    Session</span
+                  >
+                </div>
+                <h3
+                  style="
+                    text-align: center;
+                    padding: 10px 10px;
+                    background-color: rgb(233, 233, 193);
+                    border-radius: 5px;
+                  "
+                >
+                  $20
+                </h3>
+              </div>
+              <button class="card-btn-cust" type="button">ENROLL</button>
+            </div>
+          </div>
+          <div class="course-head">
+            <h2 class="course-side-txt">
+              Browse our Popular Courses, Start Learning
+            </h2>
+          </div>
+        </section>
+
+        <section class="pricing">
+          <h2 class="text-accent">Pricing</h2>
+          <p class="fs-500">Unlock Your Potential with Customized Course Combos! Elevate your skills, embrace new challenges, and embark on a transformative learning journey!</p>
+          <div class="plans flow-content">
+            <div class="plan plan--light">
+              <h2 class="plan-title">Dev 1</h2>
+              <p class="plan-price">$31.99</p>
+              <div class="plan-description-sec">
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> MERN Stack
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Gen-AI Course
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> 1:1 Doubt Solving 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Hardcopy of Notes 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Live classes
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Interview preparation
+              </span>
+              </div>
+
+              <a href="#" class="btn">Join Now</a>
+            </div>
+
+            <div class="plan plan--accent">
+              <h2 class="plan-title">super</h2>
+              <p class="plan-price">$34.99</p>
+              <div class="plan-description-sec">
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Devops Course
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Gen-AI Course
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> 1:1 Doubt Solving 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Hardcopy of Notes 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Live classes 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Interview preparation
+              </span>
+              </div>
+              <a href="#" class="btn">Join Now</a>
+            </div>
+
+            <div class="plan plan--light">
+              <h2 class="plan-title">Dev 2</h2>
+              <p class="plan-price">$32.99</p>
+              <div class="plan-description-sec">
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> MEAN Stack 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Gen-AI Course
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> 1:1 Doubt Solving 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Hardcopy of Notes 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Live classes 
+              </span>
+              <span class="plan-description">
+                <i class="fa-sharp-duotone fa-solid fa-angles-right"></i> Interview preparation
+              </span>
+              </div>
+              <a href="#" class="btn">Join Now</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
-    
-    <footer class="footer">
-        <div class="footer-one">
-            <p>@2024 LVC. All rights reserved.</p>
-            <div style="display: flex; align-items: start; gap: 20px; font-size: 30px;" class="social-media">
-                <a href="#"><i style="color: #00b6ee;;" class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i style="color: #00b6ee;;" class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i style="color: #00b6ee;;" class="fa-brands fa-instagram"></i></a>
-                
-        </div>
-        <p>Designed and Developed by: Rijul Kumar Jain.</p>
-        </div>
 
-            <div class="redirects">
-                <a style="text-decoration: none; color: white;" href="home.html" target="Navframe"><i class="fa-solid fa-house"></i>  Home</a>
-        <a style="text-decoration: none; color: white;" href="allCourse.html" target="Navframe"><i class="fa-solid fa-chalkboard"></i>  All Courses</a>
-        <a style="text-decoration: none; color: white;" href="registration.html" target="Navframe"><i class="fa-solid fa-right-to-bracket"></i>  Registration</a>
-        <a style="text-decoration: none; color: white;" href="gallery.html" target="Navframe"><i class="fa-solid fa-photo-film"></i>  Gallery</a>
-        <a style="text-decoration: none; color: white;" href="contact.html" target="Navframe"><i class="fa-solid fa-address-book"></i>  Contact</a>
-        </div>
+    <footer id="footer"></footer>
 
-        <div class="footer-search">
-            <form role="search" method="get" action="">
-                <div class="input-container">
-                      <input type="search" class="search-input" value="" name="s" placeholder="Search entire website..." />
-                  <button type="submit" class="search-submit" name="submit"><i class="material-icons">search</i></button>
-                </div><!-- input-container -->
-              </form>
-        </div>
-        
-
-    </footer>
-    
-
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
