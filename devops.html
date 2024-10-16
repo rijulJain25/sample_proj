@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devops</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <style> 
+        .outer-container {
+      margin: 0;
+      background-color: rgb(237, 255, 229);
+      border-radius: 10px;
+      box-shadow: 4px 10px 10px 10px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      color: #333f2e;
+  font-family: "Kanit", sans-serif;  }
+  
+  .container{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      align-items: center;
+      gap: 20px;
+  }
+  
+  .course-name{
+      display: flex;
+      flex-direction: column;
+      flex: 1.2;
+      gap: 20px
+  }
+  
+  .course-status{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+  }
+  
+  .upper-data{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+  }
+  
+  
+  .title-heading{
+      font-size: 65px;
+      font-weight: 700;
+      margin: 0;
+  }
+  
+  .course-prices{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      text-align: center;
+      align-items: center;
+  }
+  
+  .prices{
+      font-size: 35px;
+      font-weight: 600;
+  }
+  
+  .button-custum{
+      background-color: #333f2e;
+      color: white;
+      border: 1px solid #333f2e;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 17px 25px;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  .button-custum:hover{
+      background-color: white;
+      color: #333f2e ;
+  }
+  
+  .course-image{
+      flex: 1;
+      display: flex;
+      justify-content: end;
+  }
+  
+  .imageee{
+      width: 80%;
+  }
+  
+  .course_sec_two{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px 0px;
+  }
+  
+  .course-dec{
+      flex: 1;
+  }
+  
+  .course-dec-head{
+      font-size: 35px;
+      font-weight: bold;
+  }
+  
+  .course-cards{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      flex: 1;
+  }
+  
+  .course-card-one{
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 4px 10px 10px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 270px;
+    }
+  
+  .course-content{
+      padding: 30px 0px;
+      text-align: center;
+  }
+  
+  .course-content-heading{
+      font-size: 40px;
+  }
+  
+  .ul-list{
+      text-align:justify;
+      font-size: 20px;
+      list-style-type :none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .listing{
+      width: 90%;
+      background-color: white;
+      padding: 20px ;
+      border-radius: 10px;
+      box-shadow: 4px 10px 10px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+  }
+  
+  
+  .course-insturctor{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 50px;
+  }
+  
+  .course-insturctor-heading{
+      font-size: 35px;
+      font-weight: bold;
+  }
+  
+  .course-insturctor-name{
+      font-size: 25px;
+      font-weight: bold;
+  }
+  
+  .imageeeeee{
+      width: 100%;
+      max-height: 800px;
+  }
+  
+  .course-card-head{
+    font-weight: bold;
+  }
+  
+  .course-dec-data{
+    justify-self: justify;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .outer-container{
+      width: 95%;
+      padding: 30px 15px;
+    }
+    .container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .course-name{
+      text-align: center;
+    }
+  
+    .upper-data{
+      align-item: center;
+      justify-content: center;
+    }
+  
+    .course-prices{
+      justify-content: center;
+    }
+  
+    .course-image{
+      justify-content: center;
+    }
+  
+    .course_sec_two, .course-cards, .course-insturctor{
+      flex-direction: column;
+    }
+  
+    .ul-list{
+      font-size:17px;
+    }
+  
+    .listing{
+      padding: 15px 10px;
+      width: 100%;
+    }
+  
+  }
+  
+  
+      </style>
+
+      <div id="header"></div>
+  
+      <div class="outer-container">
+        <div class="container">
+            <div class="course-name">
+                <div class="course-status">
+                    <div class="upper-data">
+                        <div class="upper_one">
+                            <i style="color: gold;" class="fa-solid fa-chart-simple"></i> 
+                            Beginning
+                        </div>
+                        <div class="upper_two">
+                            <i style="color: gold;" class="fa-solid fa-clock"></i>
+                            6 Weeks
+                        </div>
+                    </div>
+                    <div class="course-title">
+                        <h1 class="title-heading">DevOps Fundamentals</h1>
+                    </div>
+                </div>
+                <div class="course-prices">
+                    <h2 class="prices">
+                        $25
+                    </h2>
+                    <a class="button-custum" href="#">ENROLL</a>
+                </div>
+            </div>
+    
+            <div class="course-image">
+                <img class="imageee" src="./assets/devops.png" alt="DevOps Course Image">
+            </div>
+            
+        </div>
+    
+        <div class="course_sec_two">
+            <div class="course-cards">
+                <div class="course-card-one">
+                    <i style="color: gold; font-size:30px;" class="fa-solid fa-school"></i>
+                    <h4 class="course-card-head">
+                        What you will learn
+                    </h4>
+                    <span class="course-card-spans">Introduction to DevOps</span>
+                    <span class="course-card-spans">CI/CD Pipelines</span>
+                    <span class="course-card-spans">Infrastructure as Code</span>
+                    <span class="course-card-spans">Monitoring and Logging</span>
+                </div>
+                <div class="course-card-one">
+                    <i style="color: gold; font-size:30px;" class="fa-solid fa-people-group"></i>
+                    <h4 class="course-card-head">
+                        Target Audience of course
+                    </h4>
+                    <span class="course-card-spans">Software Developers</span>
+                    <span class="course-card-spans">System Administrators</span>
+                    <span class="course-card-spans">IT Professionals</span>
+                </div>
+            </div>
+            <div class="course-dec">
+                <h3 class="course-dec-head">
+                    Course Description
+                </h3>
+                <span class="course-dec-data">
+                    This DevOps Fundamentals course provides an introduction to DevOps concepts and practices, covering CI/CD, infrastructure automation, and monitoring. It equips learners with the skills necessary to implement DevOps practices in real-world scenarios.
+                </span>
+            </div>
+        </div>
+    
+        <div class="course-content">
+            <div class="course-content-heading">
+                <h3>Course Content</h3>
+            </div>
+            <div class="course-content-data">
+                <div class="course-content-details">
+                    <ul class="ul-list">
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 1:</span> Introduction to DevOps</li>
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 2:</span> Version Control with Git</li>
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 3:</span> Continuous Integration</li>
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 4:</span> Continuous Deployment</li>
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 5:</span> Infrastructure as Code with Terraform</li>
+                        <li class="listing"><span style="color: gold; font-weight: 500;">Week 6:</span> Monitoring and Logging with ELK Stack</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="course-insturctor">
+            <div class="course-insturctor-image">
+                <img class="imageeeeee" src="./assets/teacher.png" alt="Instructor Image">
+            </div>
+            <div class="course-insturctor-detail">
+                <h3 class="course-insturctor-heading">
+                    Course Instructor
+                </h3>
+                <h4 class="course-insturctor-name">
+                    Alex Johnson
+                </h4>
+                <h5 class="course-insturctor-role">
+                    DevOps Engineer/Corporate Instructor
+                </h5>
+                <div class="small-data">
+                    <span class="experience">
+                        Experience: 15 Years
+                    </span>
+                    <br>
+                    <span class="instructor-reviews">
+                        Reviews: ⭐⭐⭐⭐⭐
+                    </span>
+                </div>
+                <div class="course-insturctor-desc">
+                    Alex is a seasoned DevOps Engineer with over 15 years of experience in cloud technologies, CI/CD processes, and automation. He is dedicated to helping teams adopt DevOps practices to improve collaboration and productivity.
+                </div>
+            </div>
+        </div>
+    
+        <div class="course-ques" style="padding: 40px 0px;">
+            <h3>Frequently Asked Questions</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is DevOps?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            DevOps is a set of practices that combines software development (Dev) and IT operations (Ops), aiming to shorten the systems development life cycle and provide continuous delivery with high software quality.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do I need any prior knowledge?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No prior knowledge is required, but familiarity with software development concepts is beneficial.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQs as needed -->
+            </div>
+        </div>
+    
+    </div>
+    
+
+      <div id="footer"></div>
+      <script src="js/index.js"></script>
+</body>
+</html>

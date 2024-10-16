@@ -3,68 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="header"></div>
-  <h4>Select the quality of images you want to see</h4>
-  <input type="radio" name="selectname" id="fhd" 
-onClick="showImg('fhd')">
-Full HD Photos
- 
-<input type="radio" name="selectname" id="hd"
-onClick="showImg('hd')">
-HD Photos
+  
+    <div id="header"></div>
+    <div class="gallery-header">
+    <h4>Select the quality of images you want to see</h4>
+    <div class="container">
+      <div class="radio_container">
+          <input type="radio" name="radio" id="fhd" checked onclick="showImg('fhd')">
+          <label for="fhd">FHD</label>
+          
+          <input type="radio" name="radio" id="hd" onclick="showImg('hd')">
+          <label for="hd">HD</label>
+          
+          <input type="radio" name="radio" id="lesshd" onclick="showImg('lesshd')">
+          <label for="lesshd">480P</label>
+          
+          <input type="radio" name="radio" id="unclear" onclick="showImg('unclear')">
+          <label for="unclear">1440</label>
 
-<input type="radio" name="selectname" id="lesshd"
-onClick="showImg('lesshd')">
-480p photos
+          <input type="radio" name="radio" id="bw" onclick="showImg('bw')">
+          <label for="bw">B&W</label>
 
-<input type="radio" name="selectname" id="unclear"
-onClick="showImg('unclear')">
-144p photos
-
-</form>
-<div id="container-gallery">
-
-</div>
-    <!-- <div class="card-holder">
-        <img src="./assets/img1.jpeg" alt="Image 1">
-        <h3 class="desc">FILTER LEVEL 0</h3>
+      </div>
+  </div>
+    
+    <div id="container-gallery">
+        <div class="card-holder">
+            <img id="img1" src="./assets/img1.jpeg" alt="Image 1">
+          
+        </div>
+        <div class="card-holder">
+            <img id="img2" src="./assets/img2.jpeg" alt="Image 2">
+          
+        </div>
+        <div class="card-holder">
+            <img id="img3" src="./assets/img3.jpeg" alt="Image 3">
+          
+        </div>
+        <div class="card-holder">
+            <img id="img4" src="./assets/img4.jpeg" alt="Image 4">
+            
+        </div>
     </div>
-      
-      <div class="card-holder">
-        <img style="filter: blur(1px);" src="./assets/img2.jpeg" alt="Image 2">
-        <h3 class="desc">FILTER LEVEL 1</h3>
-    </div>
-      
-      <div class="card-holder">
-        <img style="filter: blur(2px);" src="./assets/img3.jpeg" alt="Image 3">
-        <h3 class="desc">FILTER LEVEL 2</h3>
-    </div>
-      
-      <div class="card-holder">
-        <img style="filter: blur(3px);" src="./assets/img4.jpeg" alt="Image 4">
-        <h3 class="desc">FILTER LEVEL 3</h3>
-    </div> -->
+  </div>
+    
     <div id="footer"></div>
-<script src="./js/index.js"></script>
-<script src="./js/gallery.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>

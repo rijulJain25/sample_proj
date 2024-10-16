@@ -11,7 +11,7 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    /* font-family: "Merriweather", serif; */
+    font-family: "Kanit", sans-serif;
 
 }
 
@@ -298,6 +298,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: 2.5em 0;
+    gap: 20px;
 }
 
 .plan {
